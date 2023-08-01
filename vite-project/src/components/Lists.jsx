@@ -26,8 +26,8 @@ const Lists = ({state}) =>{
 
     },[contract])
 
- return <>
- <div>Messages</div>
+ return <div className=" h-96 w-full flex flex-col justify-center items-center ">
+ {/* <div>Messages</div> */}
  <div>{ 
  lists.map((e,index)=>{
 
@@ -35,15 +35,15 @@ const Lists = ({state}) =>{
 return (
 
     
-<table key={index}>
+<table key={index} className="bg-slate-100 ">
 
 
 <tbody>
-<tr>
-    <td> name {e.Name}</td>
-    <td> message {e.Message}</td>
-    <td> timestamp {e.Timestamp}</td>
-    <td> sender {e.Sender}</td>
+<tr className="border border-slate-300" >
+    <td className="border border-slate-300 py-2 w-48 text-center">  {e.Name}</td>
+    <td className="border border-slate-300 py-2 w-48 text-center">  {e.Message}</td>
+    <td className="border border-slate-300 py-2 w-48 text-center" > {String(e.Timestamp)}</td>
+    <td className="border border-slate-300 py-2 w-[400px] text-center">  {e.Sender}</td>
 </tr>
 
 
@@ -72,7 +72,7 @@ return (
  </div>
  
  
- </>
+ </div>
 
 }
 

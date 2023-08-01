@@ -26,16 +26,18 @@ const transferMoney = ({state}) =>{
 
     };
 
-    return (<div>
+    return (<div className="text-center" >
         
+        <div className="bg-green-200 h-48 w-full flex justify-center items-center"> 
         
-        <form onSubmit={transferMoney2}>
+        <h1 className="text-center text-3xl "> Send Me a Message! </h1> </div>
+        <form  onSubmit={transferMoney2} className="mt-4">
     
     <label> Name </label>
-    <input type="text"  id="name" placeholder= "Enter your name"/> 
+    <input type="text"  id="name" placeholder= "Enter your name" className="border text-center rounded-sm mx-2"/> 
     <label> Message </label>
-    <input type="text"  id="message" placeholder= "Enter your message"/> 
-    <button type="submit"> Pay </button>
+    <input type="text"  id="message" placeholder= "Enter your message" className="border text-center rounded-sm mx-2"/> 
+    <button type="submit" className="text-center text-xl px-4 py-2 bg-green-200 border rounded-lg"> Pay </button>
     
      </form>
      
